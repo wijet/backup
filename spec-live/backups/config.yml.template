@@ -1,0 +1,32 @@
+##
+# config.yml template
+# for usage, see:
+#   spec-live/spec_helper.rb
+#   spec-live/backups/config.rb
+##
+---
+config:
+  user: <your user name>
+  home: /absolute/path/to/your/home/dir
+storage:
+  scp:
+    specs_enabled: false
+    username: <current user name>
+    password: <password>
+    ip: localhost
+    port: 22
+    path: /absolute/path/to/spec-live/tmp
+notifier:
+  mail:
+    specs_enabled: false
+    delivery_method: smtp
+    from: <from email>
+    to: <to email>
+    address: smtp.gmail.com
+    port: 587
+    user_name: <user name>
+    password: <password>
+    authentication: plain
+    enable_starttls_auto: true
+    sendmail:
+    sendmail_args:
